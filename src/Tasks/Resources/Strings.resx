@@ -2828,6 +2828,16 @@
     <value>MSB3954: Failed to compute hash for file '{0}' because it does not exist or is inaccessible.</value>
     <comment>{StrBegin="MSB3954: "}</comment>
   </data>
+  
+  <!--
+		MSB4062: Tasks: "Microsoft.Build.Tasks.SGen"
+		Some tasks are only supported on .NET Framework
+  -->
+  <data name="TaskLoadFailure">
+    <value>MSB4062: The {0} task could not be loaded from the assembly {1}, as it is not supported on .NET Core targets. {2} Please instead use the Microsoft XML Serializer Generator. See https://docs.microsoft.com/en-us/dotnet/core/additional-tools/xml-serializer-generator for further details.</value>
+    <comment>{StrBegin="MSB4062: "}</comment>
+  </data>
+
   <!--
         The tasks message bucket is: MSB3001 - MSB3999
 

@@ -2333,6 +2333,11 @@
         <target state="translated">MSB3353: Klucz publiczny jest niezbędny, ponieważ nie określono znaku opóźnienia.</target>
         <note>{StrBegin="MSB3353: "}</note>
       </trans-unit>
+      <trans-unit id="TaskLoadFailure">
+        <source>MSB4062: The {0} task could not be loaded from the assembly {1}, as it is not supported on .NET Core targets. {2} Please instead use the Microsoft XML Serializer Generator. See https://docs.microsoft.com/en-us/dotnet/core/additional-tools/xml-serializer-generator for further details.</source>
+        <target state="new">MSB4062: The {0} task could not be loaded from the assembly {1}, as it is not supported on .NET Core targets. {2} Please instead use the Microsoft XML Serializer Generator. See https://docs.microsoft.com/en-us/dotnet/core/additional-tools/xml-serializer-generator for further details.</target>
+        <note>{StrBegin="MSB4062: "}</note>
+      </trans-unit>
       <trans-unit id="TaskRequiresFrameworkFailure">
         <source>MSB4803: The task "{0}" is not supported on the .NET Core version of MSBuild. Please use the .NET Framework version of MSBuild. See https://aka.ms/msbuild/MSB4803 for further details.</source>
         <target state="translated">MSB4803: Zadanie „{0}” nie jest obsługiwane w wersji programu MSBuild dla platformy .NET Core. Użyj wersji programu MSBuild dla platformy .NET Framework. Zobacz https://aka.ms/msbuild/MSB4803, aby uzyskać więcej szczegółów.</target>

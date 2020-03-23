@@ -2333,6 +2333,11 @@
         <target state="translated">MSB3353: 서명 연기에 필요한 공개 키를 지정하지 않았습니다.</target>
         <note>{StrBegin="MSB3353: "}</note>
       </trans-unit>
+      <trans-unit id="TaskLoadFailure">
+        <source>MSB4062: The {0} task could not be loaded from the assembly {1}, as it is not supported on .NET Core targets. {2} Please instead use the Microsoft XML Serializer Generator. See https://docs.microsoft.com/en-us/dotnet/core/additional-tools/xml-serializer-generator for further details.</source>
+        <target state="new">MSB4062: The {0} task could not be loaded from the assembly {1}, as it is not supported on .NET Core targets. {2} Please instead use the Microsoft XML Serializer Generator. See https://docs.microsoft.com/en-us/dotnet/core/additional-tools/xml-serializer-generator for further details.</target>
+        <note>{StrBegin="MSB4062: "}</note>
+      </trans-unit>
       <trans-unit id="TaskRequiresFrameworkFailure">
         <source>MSB4803: The task "{0}" is not supported on the .NET Core version of MSBuild. Please use the .NET Framework version of MSBuild. See https://aka.ms/msbuild/MSB4803 for further details.</source>
         <target state="translated">MSB4803: "{0}" 작업은 MSBuild의 .NET Core 버전에서 지원되지 않습니다. MSBuild의 .NET Framework 버전을 사용하세요. 자세한 내용은 https://aka.ms/msbuild/MSB4803을 참조하세요.</target>
