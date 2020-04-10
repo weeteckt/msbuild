@@ -9,7 +9,7 @@
     <!-- Clear references, the SDK may add some depending on UsuingToolXxx settings, but we only want to restore the following -->
     <PackageReference Remove="@(PackageReference)"/>
     <PackageReference Include="Microsoft.DotNet.IBCMerge" Version="$(MicrosoftDotNetIBCMergeVersion)" Condition="'$(UsingToolIbcOptimization)' == 'true'" />
-    <PackageReference Include="Drop.App" Version="$(DropAppVersion)" ExcludeAssets="all" Condition="'$(UsingToolVisualStudioIbcTraining)' == 'true'"/>
+    <PackageReference Include="Drop.App" Version="18.165.29912-buildid11693003" ExcludeAssets="all" Condition="'$(UsingToolVisualStudioIbcTraining)' == 'true'"/>
   </ItemGroup>
   <PropertyGroup>
     <RestoreSources></RestoreSources>
@@ -19,6 +19,7 @@
     <RestoreSources Condition="'$(UsingToolVisualStudioIbcTraining)' == 'true'">
       $(RestoreSources);
       https://devdiv.pkgs.visualstudio.com/_packaging/VS/nuget/v3/index.json;
+      $([MSBuild]::Escape(https://pkgs.dev.azure.com/1esSharedAssets/_packaging/Artifact%40Release/nuget/v3/index.json));
     </RestoreSources>
   </PropertyGroup>
 
