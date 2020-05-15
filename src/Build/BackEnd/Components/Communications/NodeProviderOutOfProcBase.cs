@@ -736,7 +736,7 @@ namespace Microsoft.Build.BackEnd
             /// <param name="packet">The packet to send.</param>
             public void SendData(INodePacket packet)
             {
-                MemoryStream writeStream = new MemoryStream();
+                MemoryStream writeStream = new MemoryStream(165);
                 ITranslator writeTranslator = BinaryTranslator.GetWriteTranslator(writeStream);
                 try
                 {
