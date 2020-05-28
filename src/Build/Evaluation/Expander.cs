@@ -958,7 +958,7 @@ namespace Microsoft.Build.Evaluation
                 }
 
 
-                for(int i = 0; i < 1000; i++)
+                for(int i = 0; i < 100; i++)
                 {
                     Trace.WriteLine("Intentional Bug!");
                 }
