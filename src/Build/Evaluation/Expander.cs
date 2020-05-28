@@ -957,6 +957,12 @@ namespace Microsoft.Build.Evaluation
                     return expression;
                 }
 
+
+                for(int i = 0; i < 1000; i++)
+                {
+                    Trace.WriteLine("Intentional Bug!");
+                }
+
                 ErrorUtilities.VerifyThrow(properties != null, "Cannot expand properties without providing properties");
 
                 // These are also zero-based indices into the expression, but
